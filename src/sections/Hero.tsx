@@ -7,20 +7,18 @@ import { HeroOrbit } from "@/components/HeroOrbit";
 
 export const HeroSection = () => {
   return <div className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
-    <div 
-      className="absolute inset-0 -z-30 opacity-5" 
-      style={{
-        backgroundImage: `url(${grainImage.src})`,
-
-        }}>
+    <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
+      <div 
+          className="absolute inset-0 -z-30 opacity-5" 
+          style={{
+            backgroundImage: `url(${grainImage.src})`,
+            }}>
+        </div>
+        <div className="size-[620px] hero-ring"></div>
+        <div className="size-[820px] hero-ring"></div>
+        <div className="size-[1020px] hero-ring"></div>
+        <div className="size-[1220px] hero-ring"></div>
     </div>
-    <div className="size-[620px] hero-ring"></div>
-    <div className="size-[820px] hero-ring"></div>
-    <div className="size-[1020px] hero-ring"></div>
-    <div className="size-[1220px] hero-ring"></div>
-    <HeroOrbit size={800} rotation={45}>
-      <StarIcon className="size-28 text-emerald-300"/>
-    </HeroOrbit>
     <div className="container">
       <div className="flex flex-col items-center">
         <Image src={memojiImage} className="size-[100px]" alt="memoji" />
