@@ -46,19 +46,19 @@ export const HeroSection = () => {
         </div>
         {/* decorative halftone glyph (replaces portrait cut-out) */}
         <div
-          className="hero-portrait relative justify-self-start mt-[32px] mg:justify-self-end mg:mt-0 w-[min(280px,82vw)] mg:w-[clamp(220px,28vw,280px)] h-[clamp(300px,90vw,340px)] mg:h-[clamp(292px,36vw,340px)]"
+          className="hero-portrait relative justify-self-start mt-[32px] mg:justify-self-end mg:mt-0 w-full max-w-[280px] aspect-[14/17]"
           aria-hidden="true"
         >
           <div
             className="tornreal hero-glyph absolute inset-0 [--r:3deg] drop-shadow-[9px_11px_0_rgba(20,22,28,.18)]"
           >
             <div className="halftone w-full h-full bg-coral bg-blend-multiply flex items-center justify-center">
-              <span className="font-heading text-[clamp(116px,16vw,150px)] leading-none tracking-normal text-[rgba(255,255,255,.92)] [text-shadow:0_2px_6px_rgba(0,0,0,.25)]">
+              <span className="font-heading text-[clamp(88px,40vw,150px)] leading-none tracking-normal text-[rgba(255,255,255,.92)] [text-shadow:0_2px_6px_rgba(0,0,0,.25)]">
                 SO
               </span>
             </div>
           </div>
-          <div className="absolute -left-[22px] mg:-left-[30px] bottom-[44px] w-[88px] mg:w-[110px] h-[88px] mg:h-[110px] rounded-full bg-blue mix-blend-multiply opacity-90 -z-10" />
+          <div className="absolute -left-[20px] mg:-left-[30px] bottom-[44px] w-[clamp(72px,24vw,110px)] h-[clamp(72px,24vw,110px)] rounded-full bg-blue mix-blend-multiply opacity-90 -z-10" />
         </div>
       </div>
       {/* numbered intro strip */}
