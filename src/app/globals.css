@@ -157,6 +157,16 @@ body::after {
   }
 }
 
+.hero-glyph {
+  animation: wob 6s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-glyph {
+    animation: none;
+  }
+}
+
 @keyframes mq {
   to {
     transform: translateX(-50%);

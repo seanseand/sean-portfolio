@@ -1,3 +1,5 @@
+import type React from "react";
+
 export const HeroSection = () => {
   return (
     <header
@@ -112,9 +114,10 @@ export const HeroSection = () => {
             </a>
           </div>
         </div>
-        {/* riso portrait cut-out */}
+        {/* decorative halftone glyph (replaces portrait cut-out) */}
         <div
           className="hero-portrait"
+          aria-hidden="true"
           style={{
             position: "relative",
             justifySelf: "end",
@@ -123,13 +126,13 @@ export const HeroSection = () => {
           }}
         >
           <div
-            className="tornreal"
+            className="tornreal hero-glyph"
             style={{
               position: "absolute",
               inset: 0,
-              transform: "rotate(3deg)",
+              "--r": "3deg",
               filter: "drop-shadow(9px 11px 0 rgba(20,22,28,.18))",
-            }}
+            } as React.CSSProperties}
           >
             <div
               className="halftone"
@@ -141,14 +144,20 @@ export const HeroSection = () => {
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-                textAlign: "center",
-                color: "#fff",
-                font: "700 12px 'Space Mono', monospace",
-                textShadow: "0 1px 2px rgba(0,0,0,.3)",
               }}
             >
-              PORTRAIT /<br />
-              SELF CUT-OUT
+              <span
+                style={{
+                  fontFamily: "var(--font-anton), sans-serif",
+                  fontSize: 150,
+                  lineHeight: 1,
+                  letterSpacing: "-.02em",
+                  color: "rgba(255,255,255,.92)",
+                  textShadow: "0 2px 6px rgba(0,0,0,.25)",
+                }}
+              >
+                SO
+              </span>
             </div>
           </div>
           <div
