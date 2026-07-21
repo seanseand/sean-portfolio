@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Anton, Archivo, Archivo_Black, Space_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -30,6 +30,11 @@ export const metadata: Metadata = {
   title: "Sean Octavo — Software Builder",
   description:
     "Full-stack & product builder, ML thesis researcher, and co-founder of an agri-IoT startup. Based in Baguio City, PH.",
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({

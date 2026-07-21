@@ -9,7 +9,7 @@ export const ContactSection = () => {
         <div className="font-mono font-bold text-[clamp(11px,1.25vw,13px)] tracking-[.16em] mg:tracking-[.2em] mb-[16px]">
           ◦ LET&apos;S BUILD SOMETHING ◦
         </div>
-        <h2 className="m-0 font-heading text-[clamp(50px,11vw,150px)] leading-[0.86] tracking-normal">
+        <h2 className="m-0 font-heading text-[clamp(50px,11vw,150px)] leading-[0.86] tracking-[.01em]">
           SAY HELLO<span className="text-coral">.</span>
         </h2>
         <a

@@ -9,7 +9,7 @@ export const HeroSection = () => {
       </div>
       <div className="hero-grid grid grid-cols-1 mg:grid-cols-[1.35fr_.8fr] lg:grid-cols-[1.55fr_1fr] gap-[30px] lg:gap-[36px] items-end">
         <div>
-          <h1 className="m-0 font-display text-[clamp(46px,9vw,116px)] leading-[0.9] tracking-normal">
+          <h1 className="m-0 font-display text-[clamp(46px,9vw,116px)] leading-[0.9] tracking-[-.025em]">
             i build software,
             <br />
             ship products
@@ -53,7 +53,7 @@ export const HeroSection = () => {
             className="tornreal hero-glyph absolute inset-0 [--r:3deg] drop-shadow-[9px_11px_0_rgba(20,22,28,.18)]"
           >
             <div className="halftone w-full h-full bg-coral bg-blend-multiply flex items-center justify-center">
-              <span className="font-heading text-[clamp(88px,40vw,150px)] leading-none tracking-normal text-[rgba(255,255,255,.92)] [text-shadow:0_2px_6px_rgba(0,0,0,.25)]">
+              <span className="font-heading text-[clamp(88px,40vw,150px)] leading-none tracking-[-.02em] text-[rgba(255,255,255,.92)] [text-shadow:0_2px_6px_rgba(0,0,0,.25)]">
                 SO
               </span>
             </div>

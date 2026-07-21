@@ -29,7 +29,7 @@ export const ProjectsSection = () => {
             <div className="font-mono font-bold text-[clamp(10px,1vw,11px)] tracking-[.14em] text-coral">
               {featured.tag}
             </div>
-            <h3 className="mt-[8px] mb-[2px] font-display text-[clamp(38px,5.4vw,52px)] leading-[0.94] tracking-normal">
+            <h3 className="mt-[8px] mb-[2px] font-display text-[clamp(38px,5.4vw,52px)] leading-[0.94] tracking-[-.02em]">
               {featured.title}
             </h3>
             <div className="font-sans font-semibold text-[clamp(14px,1.45vw,16px)] text-[#2b2d34]">
@@ -63,7 +63,7 @@ export const ProjectsSection = () => {
         <span className="flex-1 h-[2px] bg-ink" />
         <span className="font-mono font-bold text-[clamp(10px,1vw,11px)] text-coral">03 SELECTED</span>
       </Reveal>
-      <Reveal className="work-grid grid grid-cols-1 mg:grid-cols-2 lg:grid-cols-3 gap-[20px] lg:gap-[24px]">
+      <Reveal className="work-grid grid grid-cols-1 mg:grid-cols-3 gap-[20px] lg:gap-[24px]">
         {moreProjects.map((p) => (
           <article
             key={p.n}
@@ -82,7 +82,7 @@ export const ProjectsSection = () => {
             >
               {p.tag}
             </div>
-            <h3 className="mt-[7px] mb-[3px] font-display text-[clamp(21px,2.3vw,24px)] leading-none tracking-normal relative z-[1]">
+            <h3 className="mt-[7px] mb-[3px] font-display text-[clamp(21px,2.3vw,24px)] leading-none tracking-[-.01em] relative z-[1]">
               {p.title}
             </h3>
             <div className="font-sans font-semibold text-[clamp(12px,1.2vw,13px)] text-[#2b2d34] relative z-[1]">
