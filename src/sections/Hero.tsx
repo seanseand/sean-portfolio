@@ -1,6 +1,6 @@
 export const HeroSection = () => {
   return (
-    <header id="top" className="relative max-w-[1180px] mx-auto px-[40px] pt-[64px] pb-[40px]">
+    <header id="top" className="relative max-w-content mx-auto px-section-x pt-[64px] pb-section-y">
       <div className="font-mono font-normal text-[13px] tracking-[.22em] text-coral mb-[16px]">
         ◦ COMPUTER SCIENCE GRADUATE · 2026 · BAGUIO CITY, PH
       </div>
@@ -13,7 +13,7 @@ export const HeroSection = () => {
             <br />
             &amp; chase <span className="text-coral">good ideas.</span>
           </h1>
-          <p className="max-w-[520px] mt-[26px] mb-0 font-sans font-medium text-[16px] leading-[1.55] text-[#2b2d34]">
+          <p className="max-w-[520px] mt-[26px] mb-0 font-sans font-medium text-[16px] leading-[1.55] text-body">
             Full-stack &amp; product builder, ML thesis researcher, and co-founder of
             an agri-IoT startup. I like shipping fast, tidy interfaces, and the
             occasional small experiment.
@@ -21,7 +21,7 @@ export const HeroSection = () => {
           <div className="flex gap-[14px] mt-[28px] flex-wrap">
             <a
               href="#work"
-              className="inline-flex items-center gap-[8px] bg-ink text-[#fffdf4] font-mono font-bold text-[13px] tracking-[.08em] px-[22px] py-[14px] rounded-[2px] shadow-[4px_4px_0_#f0492e]"
+              className="inline-flex items-center gap-[8px] bg-ink text-card font-mono font-bold text-[13px] tracking-[.08em] px-[22px] py-[14px] rounded-[2px] shadow-btn"
             >
               SEE THE WORK →
             </a>

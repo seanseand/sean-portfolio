@@ -2,7 +2,7 @@ import { Reveal } from "@/components/Reveal";
 
 export const AboutSection = () => {
   return (
-    <Reveal as="section" id="about" className="max-w-[1180px] mx-auto px-[40px] pt-[84px] pb-[40px]">
+    <Reveal as="section" id="about" className="max-w-content mx-auto px-section-x pt-[84px] pb-section-y">
       <div className="flex items-baseline gap-[16px] mb-[34px]">
         <span className="font-heading text-[46px] leading-none text-ink">ABOUT</span>
         <span className="font-mono font-bold text-[12px] tracking-[.16em] text-coral">
@@ -10,7 +10,7 @@ export const AboutSection = () => {
         </span>
       </div>
       <div className="about-grid grid grid-cols-1 mg:grid-cols-[1.3fr_1fr] gap-[30px] items-start">
-        <div className="paper crumple px-[34px] pt-[34px] pb-[30px] shadow-[8px_9px_0_rgba(20,22,28,.12)] rotate-[-.5deg]">
+        <div className="paper crumple px-[34px] pt-[34px] pb-[30px] shadow-card-lg rotate-[-.5deg]">
           <p className="m-0 font-sans font-medium text-[17px] leading-[1.6] relative z-[1]">
             I&apos;m <b>Sean Drei A. Octavo</b>, a Computer Science graduate from
             Baguio City. I work across the whole build — from UI/UX direction down to
@@ -24,7 +24,7 @@ export const AboutSection = () => {
               (tag) => (
                 <span
                   key={tag}
-                  className="bg-[#efe9d8] border-[1.5px] border-ink font-mono font-bold text-[11px] px-[11px] py-[6px]"
+                  className="bg-paper border-[1.5px] border-ink font-mono font-bold text-[11px] px-[11px] py-[6px]"
                 >
                   {tag}
                 </span>
@@ -33,19 +33,19 @@ export const AboutSection = () => {
           </div>
         </div>
         <div className="flex flex-col gap-[18px]">
-          <div className="paper px-[22px] py-[22px] shadow-[6px_7px_0_rgba(20,22,28,.12)] rotate-[1deg]">
+          <div className="paper px-[22px] py-[22px] shadow-card rotate-[1deg]">
             <div className="font-mono font-bold text-[12px] tracking-[.12em] text-coral mb-[12px]">
               ◦ EDUCATION
             </div>
             <div className="font-sans font-extrabold text-[16px]">Saint Louis University</div>
-            <div className="font-sans font-medium text-[13px] text-[#555]">
+            <div className="font-sans font-medium text-[13px] text-muted">
               B.S. Computer Science · May 2026 · <b>Dean&apos;s Lister</b>
             </div>
             <div className="h-px bg-[rgba(0,0,0,.12)] my-[12px]" />
             <div className="font-sans font-extrabold text-[16px]">University of Saint Louis</div>
-            <div className="font-sans font-medium text-[13px] text-[#555]">STEM Strand · 2021</div>
+            <div className="font-sans font-medium text-[13px] text-muted">STEM Strand · 2021</div>
           </div>
-          <div className="paper p-[22px] shadow-[6px_7px_0_rgba(20,22,28,.12)] rotate-[-1.2deg]">
+          <div className="paper p-[22px] shadow-card rotate-[-1.2deg]">
             <div className="font-mono font-bold text-[12px] tracking-[.12em] text-blue mb-[12px]">
               ◦ OFF THE CLOCK
             </div>
@@ -64,7 +64,7 @@ export const AboutSection = () => {
       </div>
       {/* certs row */}
       <div className="certs-row flex gap-[16px] flex-wrap mt-[22px]">
-        <div className="flex items-center gap-[12px] bg-ink text-[#efe9d8] px-[20px] py-[14px] rotate-[.6deg]">
+        <div className="flex items-center gap-[12px] bg-ink text-paper px-[20px] py-[14px] rotate-[.6deg]">
           <span className="font-heading text-[26px] text-gold-bright">★</span>
           <div>
             <div className="font-sans font-bold text-[13px]">
@@ -75,7 +75,7 @@ export const AboutSection = () => {
             </div>
           </div>
         </div>
-        <div className="flex items-center gap-[12px] bg-ink text-[#efe9d8] px-[20px] py-[14px] rotate-[-.6deg]">
+        <div className="flex items-center gap-[12px] bg-ink text-paper px-[20px] py-[14px] rotate-[-.6deg]">
           <span className="font-heading text-[26px] text-blue">★</span>
           <div>
             <div className="font-sans font-bold text-[13px]">
