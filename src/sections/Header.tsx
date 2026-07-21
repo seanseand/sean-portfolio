@@ -75,15 +75,15 @@ export const Header = () => {
     <nav className="sticky top-0 z-40 border-b-[2px] border-ink">
       <div className="absolute inset-0 -z-10 backdrop-blur-[6px] bg-[rgba(239,233,216,.72)]" />
 
-      <div className="relative z-50 flex items-center justify-between px-[30px] py-[14px]">
+      <div className="relative z-50 flex items-center justify-between px-[20px] sm:px-[24px] mg:px-[30px] py-[12px] mg:py-[14px]">
         <a href="#top" className="flex items-center gap-[9px] text-ink">
           <span className="w-[15px] h-[15px] bg-coral rounded-full" />
-          <span className="font-sans font-extrabold text-[15px] tracking-[.02em]">
+          <span className="font-sans font-extrabold text-[clamp(13px,1.4vw,15px)] tracking-[.02em]">
             SEAN OCTAVO
           </span>
         </a>
 
-        <div className="hidden mg:flex gap-[26px] font-mono font-bold text-[12px] tracking-[.12em]">
+        <div className="hidden mg:flex gap-[26px] font-mono font-bold text-[clamp(10px,1.1vw,12px)] tracking-[.12em]">
           {NAV_LINKS.map((link) => (
             <a
               key={link.href}

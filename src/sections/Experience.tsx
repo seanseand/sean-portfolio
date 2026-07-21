@@ -6,33 +6,33 @@ export const ExperienceSection = () => {
     <Reveal
       as="section"
       id="experience"
-      className="max-w-[1180px] mx-auto px-[40px] pt-[70px] pb-[40px]"
+      className="max-w-[1180px] mx-auto px-[20px] sm:px-[24px] mg:px-[32px] lg:px-[40px] pt-[58px] mg:pt-[66px] lg:pt-[70px] pb-[32px] lg:pb-[40px]"
     >
-      <div className="flex items-baseline gap-[16px] mb-[38px]">
-        <span className="font-heading text-[46px] leading-none text-ink">THE PATH</span>
-        <span className="font-mono font-bold text-[12px] tracking-[.16em] text-coral">
+      <div className="flex flex-wrap items-baseline gap-[10px] mg:gap-[16px] mb-[30px] mg:mb-[38px]">
+        <span className="font-heading text-[clamp(38px,5.5vw,46px)] leading-none text-ink">THE PATH</span>
+        <span className="font-mono font-bold text-[clamp(11px,1.15vw,12px)] tracking-[.14em] mg:tracking-[.16em] text-coral">
           / WHERE I&apos;VE BEEN
         </span>
       </div>
-      <div className="relative pl-[34px] border-l-[3px] border-ink flex flex-col gap-[30px]">
+      <div className="relative pl-[24px] mg:pl-[34px] border-l-[3px] border-ink flex flex-col gap-[24px] mg:gap-[30px]">
         {timeline.map((e) => (
           <div key={e.org} className="relative">
             <span
-              className="absolute -left-[45px] top-[4px] w-[16px] h-[16px] border-[3px] border-ink rounded-full"
+              className="absolute -left-[35px] mg:-left-[45px] top-[4px] w-[16px] h-[16px] border-[3px] border-ink rounded-full"
               style={{ background: e.color }}
             />
             <div
-              className="paper px-[26px] py-[22px] shadow-[6px_7px_0_rgba(20,22,28,.1)]"
+              className="paper px-[20px] mg:px-[26px] py-[20px] mg:py-[22px] shadow-[6px_7px_0_rgba(20,22,28,.1)]"
               style={{ transform: `rotate(${e.rot})` }}
             >
               <div className="flex justify-between flex-wrap gap-[8px] items-baseline">
-                <div className="font-sans font-extrabold text-[19px]">{e.org}</div>
-                <div className="font-mono font-bold text-[12px] text-coral">{e.when}</div>
+                <div className="font-sans font-extrabold text-[clamp(17px,1.8vw,19px)]">{e.org}</div>
+                <div className="font-mono font-bold text-[clamp(11px,1.15vw,12px)] text-coral">{e.when}</div>
               </div>
-              <div className="font-sans font-semibold text-[13px] text-[#555] mt-[2px]">
+              <div className="font-sans font-semibold text-[clamp(12px,1.2vw,13px)] text-[#555] mt-[2px]">
                 {e.role} · {e.place}
               </div>
-              <p className="mt-[12px] mb-0 font-sans font-medium text-[14px] leading-[1.5] text-[#2b2d34]">
+              <p className="mt-[12px] mb-0 font-sans font-medium text-[clamp(13px,1.3vw,14px)] leading-[1.5] text-[#2b2d34]">
                 {e.blurb}
               </p>
             </div>
