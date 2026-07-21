@@ -39,6 +39,7 @@ export function AsciiPanel({ n, color, title }: AsciiPanelProps) {
   const panelRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [dropHint, setDropHint] = useState<string | null>(null);
+  const [isTouch, setIsTouch] = useState(false);
 
   useEffect(() => {
     const panel = panelRef.current;
@@ -46,6 +47,10 @@ export function AsciiPanel({ n, color, title }: AsciiPanelProps) {
     if (!panel || !cv) return;
     const ctx = cv.getContext("2d");
     if (!ctx) return;
+
+    const canHover = window.matchMedia("(hover: hover)").matches;
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    setIsTouch(!canHover);
 
     let src: HTMLCanvasElement | HTMLImageElement = makePlaceholderSource(color, n);
     let prog = 0;
@@ -105,16 +110,27 @@ export function AsciiPanel({ n, color, title }: AsciiPanelProps) {
       if (!raf) raf = requestAnimationFrame(tick);
     };
 
-    const onEnter = () => {
+    const activate = () => {
       hovering = true;
       cv.style.opacity = "1";
-      kick();
+      if (reduceMotion) {
+        prog = 1;
+        render();
+      } else {
+        kick();
+      }
     };
-    const onLeave = () => {
+    const deactivate = () => {
       hovering = false;
       cv.style.opacity = "0";
-      kick();
+      if (reduceMotion) {
+        prog = 0;
+        ctx.clearRect(0, 0, cv.width, cv.height);
+      } else {
+        kick();
+      }
     };
+
     const onDragOver = (e: DragEvent) => {
       e.preventDefault();
       setDropHint("RELEASE TO DROP");
@@ -128,27 +144,41 @@ export function AsciiPanel({ n, color, title }: AsciiPanelProps) {
       const img = new Image();
       img.onload = () => {
         src = img;
-        hovering = true;
-        cv.style.opacity = "1";
         prog = 0;
-        kick();
+        activate();
       };
       img.src = URL.createObjectURL(f);
     };
 
-    panel.addEventListener("mouseenter", onEnter);
-    panel.addEventListener("mouseleave", onLeave);
     panel.addEventListener("dragover", onDragOver);
     panel.addEventListener("dragleave", onDragLeave);
     panel.addEventListener("drop", onDrop);
 
+    let onTap: (() => void) | null = null;
+    if (canHover) {
+      panel.addEventListener("mouseenter", activate);
+      panel.addEventListener("mouseleave", deactivate);
+    } else {
+      let on = false;
+      onTap = () => {
+        on = !on;
+        if (on) activate();
+        else deactivate();
+      };
+      panel.addEventListener("click", onTap);
+    }
+
     return () => {
       if (raf) cancelAnimationFrame(raf);
-      panel.removeEventListener("mouseenter", onEnter);
-      panel.removeEventListener("mouseleave", onLeave);
       panel.removeEventListener("dragover", onDragOver);
       panel.removeEventListener("dragleave", onDragLeave);
       panel.removeEventListener("drop", onDrop);
+      if (canHover) {
+        panel.removeEventListener("mouseenter", activate);
+        panel.removeEventListener("mouseleave", deactivate);
+      } else if (onTap) {
+        panel.removeEventListener("click", onTap);
+      }
     };
   }, [color, n]);
 
@@ -163,7 +193,9 @@ export function AsciiPanel({ n, color, title }: AsciiPanelProps) {
           {n}
         </div>
         <div className="absolute bottom-[14px] left-0 right-0 text-center text-[rgba(255,255,255,.85)] font-mono font-bold text-[11px] tracking-[.1em]">
-          ◦ {title} — HOVER TO DECODE · DROP A PHOTO ◦
+          {isTouch
+            ? `◦ ${title} — TAP TO DECODE ◦`
+            : `◦ ${title} — HOVER TO DECODE · DROP A PHOTO ◦`}
         </div>
         <canvas
           ref={canvasRef}
