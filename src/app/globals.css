@@ -18,6 +18,15 @@
   --breakpoint-lg: 1200px;
   --color-background: var(--paper);
   --color-foreground: var(--ink);
+  --color-paper: var(--paper);
+  --color-ink: var(--ink);
+  --color-coral: var(--coral);
+  --color-coral-dark: var(--coral-dark);
+  --color-blue: var(--blue);
+  --color-green: var(--green);
+  --color-gold: var(--gold);
+  --color-gold-bright: var(--gold-bright);
+  --color-card: var(--card);
   --font-display: var(--font-archivo-black);
   --font-heading: var(--font-anton);
   --font-sans: var(--font-archivo);
@@ -182,22 +191,4 @@ body::after {
 .reveal.in {
   opacity: 1;
   transform: none;
-}
-
-/* responsive: the source design is desktop-first; stack the multi-column
-   grids so nothing overflows on narrow viewports */
-@media (max-width: 768px) {
-  .hero-grid,
-  .about-grid,
-  .work-grid,
-  .featured-grid,
-  .intro-strip,
-  .certs-row {
-    grid-template-columns: 1fr !important;
-  }
-
-  .hero-portrait {
-    justify-self: start !important;
-    margin-top: 32px;
-  }
 }

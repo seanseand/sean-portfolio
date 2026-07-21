@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <AsciiBackground />
-      <div style={{ position: "relative", zIndex: 1 }}>
+      <div className="relative z-[1]">
         <Header />
         <HeroSection />
         <TapeSection />

@@ -153,73 +153,25 @@ export function AsciiPanel({ n, color, title }: AsciiPanelProps) {
   }, [color, n]);
 
   return (
-    <div style={{ position: "relative", minHeight: 360 }}>
+    <div className="relative min-h-[360px]">
       <div
         ref={panelRef}
-        className="halftone tornreal"
-        style={{
-          position: "relative",
-          width: "100%",
-          height: "100%",
-          minHeight: 360,
-          backgroundColor: color,
-          backgroundBlendMode: "multiply",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          cursor: "crosshair",
-        }}
+        className="halftone tornreal relative w-full h-full min-h-[360px] bg-blend-multiply flex items-center justify-center cursor-crosshair"
+        style={{ backgroundColor: color }}
       >
-        <div
-          style={{
-            fontFamily: "var(--font-anton)",
-            fontSize: 104,
-            color: "rgba(255,255,255,.9)",
-            lineHeight: 1,
-            textShadow: "0 2px 6px rgba(0,0,0,.25)",
-          }}
-        >
+        <div className="font-heading text-[104px] text-[rgba(255,255,255,.9)] leading-none [text-shadow:0_2px_6px_rgba(0,0,0,.25)]">
           {n}
         </div>
-        <div
-          style={{
-            position: "absolute",
-            bottom: 14,
-            left: 0,
-            right: 0,
-            textAlign: "center",
-            color: "rgba(255,255,255,.85)",
-            font: "700 11px 'Space Mono', monospace",
-            letterSpacing: ".1em",
-          }}
-        >
+        <div className="absolute bottom-[14px] left-0 right-0 text-center text-[rgba(255,255,255,.85)] font-mono font-bold text-[11px] tracking-[.1em]">
           ◦ {title} — HOVER TO DECODE · DROP A PHOTO ◦
         </div>
         <canvas
           ref={canvasRef}
-          className="ascii-cv"
-          style={{
-            position: "absolute",
-            inset: 0,
-            width: "100%",
-            height: "100%",
-            opacity: 0,
-            transition: "opacity .3s ease",
-            pointerEvents: "none",
-          }}
+          className="ascii-cv absolute inset-0 w-full h-full opacity-0 transition-opacity duration-300 ease-in-out pointer-events-none"
         />
         <div
-          style={{
-            position: "absolute",
-            top: 10,
-            right: 12,
-            font: "700 9px 'Space Mono', monospace",
-            color: "rgba(255,255,255,.85)",
-            opacity: dropHint ? 1 : 0,
-            transition: "opacity .25s",
-            pointerEvents: "none",
-            zIndex: 2,
-          }}
+          className="absolute top-[10px] right-[12px] font-mono font-bold text-[9px] text-[rgba(255,255,255,.85)] transition-opacity duration-[250ms] pointer-events-none z-[2]"
+          style={{ opacity: dropHint ? 1 : 0 }}
         >
           {dropHint ?? "DROP PHOTO ↴"}
         </div>

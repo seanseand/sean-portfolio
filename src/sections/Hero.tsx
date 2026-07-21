@@ -1,95 +1,33 @@
-import type React from "react";
-
 export const HeroSection = () => {
   return (
-    <header
-      id="top"
-      style={{
-        position: "relative",
-        maxWidth: 1180,
-        margin: "0 auto",
-        padding: "64px 40px 40px",
-      }}
-    >
-      <div
-        style={{
-          font: "400 13px 'Space Mono', monospace",
-          letterSpacing: ".22em",
-          color: "#f0492e",
-          marginBottom: 16,
-        }}
-      >
+    <header id="top" className="relative max-w-[1180px] mx-auto px-[40px] pt-[64px] pb-[40px]">
+      <div className="font-mono font-normal text-[13px] tracking-[.22em] text-coral mb-[16px]">
         ◦ COMPUTER SCIENCE GRADUATE · 2026 · BAGUIO CITY, PH
       </div>
-      <div
-        className="hero-grid"
-        style={{
-          display: "grid",
-          gridTemplateColumns: "1.55fr 1fr",
-          gap: 36,
-          alignItems: "end",
-        }}
-      >
+      <div className="hero-grid grid grid-cols-1 mg:grid-cols-[1.55fr_1fr] gap-[36px] items-end">
         <div>
-          <h1
-            style={{
-              margin: 0,
-              fontFamily: "var(--font-archivo-black), sans-serif",
-              fontSize: "clamp(56px, 7.6vw, 116px)",
-              lineHeight: 0.9,
-              letterSpacing: "-.025em",
-            }}
-          >
+          <h1 className="m-0 font-display text-[clamp(56px,7.6vw,116px)] leading-[0.9] tracking-[-.025em]">
             i build software,
             <br />
             ship products
             <br />
-            &amp; chase <span style={{ color: "#f0492e" }}>good ideas.</span>
+            &amp; chase <span className="text-coral">good ideas.</span>
           </h1>
-          <p
-            style={{
-              maxWidth: 520,
-              margin: "26px 0 0",
-              font: "500 16px/1.55 'Archivo', sans-serif",
-              color: "#2b2d34",
-            }}
-          >
+          <p className="max-w-[520px] mt-[26px] mb-0 font-sans font-medium text-[16px] leading-[1.55] text-[#2b2d34]">
             Full-stack &amp; product builder, ML thesis researcher, and co-founder of
             an agri-IoT startup. I like shipping fast, tidy interfaces, and the
             occasional small experiment.
           </p>
-          <div style={{ display: "flex", gap: 14, marginTop: 28, flexWrap: "wrap" }}>
+          <div className="flex gap-[14px] mt-[28px] flex-wrap">
             <a
               href="#work"
-              style={{
-                display: "inline-flex",
-                alignItems: "center",
-                gap: 8,
-                background: "#14161c",
-                color: "#fffdf4",
-                font: "700 13px 'Space Mono', monospace",
-                letterSpacing: ".08em",
-                padding: "14px 22px",
-                borderRadius: 2,
-                boxShadow: "4px 4px 0 #f0492e",
-              }}
+              className="inline-flex items-center gap-[8px] bg-ink text-[#fffdf4] font-mono font-bold text-[13px] tracking-[.08em] px-[22px] py-[14px] rounded-[2px] shadow-[4px_4px_0_#f0492e]"
             >
               SEE THE WORK →
             </a>
             <a
               href="#contact"
-              style={{
-                display: "inline-flex",
-                alignItems: "center",
-                gap: 8,
-                background: "transparent",
-                color: "#14161c",
-                font: "700 13px 'Space Mono', monospace",
-                letterSpacing: ".08em",
-                padding: "14px 22px",
-                border: "2px solid #14161c",
-                borderRadius: 2,
-              }}
+              className="inline-flex items-center gap-[8px] bg-transparent text-ink font-mono font-bold text-[13px] tracking-[.08em] px-[22px] py-[14px] border-[2px] border-ink rounded-[2px]"
             >
               GET IN TOUCH
             </a>
@@ -97,18 +35,7 @@ export const HeroSection = () => {
               href="/Octavo_Sean_Resume.pdf"
               target="_blank"
               rel="noopener"
-              style={{
-                display: "inline-flex",
-                alignItems: "center",
-                gap: 8,
-                background: "transparent",
-                color: "#14161c",
-                font: "700 13px 'Space Mono', monospace",
-                letterSpacing: ".08em",
-                padding: "14px 22px",
-                border: "2px dashed #14161c",
-                borderRadius: 2,
-              }}
+              className="inline-flex items-center gap-[8px] bg-transparent text-ink font-mono font-bold text-[13px] tracking-[.08em] px-[22px] py-[14px] border-[2px] border-dashed border-ink rounded-[2px]"
             >
               RESUME ↓
             </a>
@@ -116,99 +43,38 @@ export const HeroSection = () => {
         </div>
         {/* decorative halftone glyph (replaces portrait cut-out) */}
         <div
-          className="hero-portrait"
+          className="hero-portrait relative justify-self-start mt-[32px] mg:justify-self-end mg:mt-0 w-[280px] h-[340px]"
           aria-hidden="true"
-          style={{
-            position: "relative",
-            justifySelf: "end",
-            width: 280,
-            height: 340,
-          }}
         >
           <div
-            className="tornreal hero-glyph"
-            style={{
-              position: "absolute",
-              inset: 0,
-              "--r": "3deg",
-              filter: "drop-shadow(9px 11px 0 rgba(20,22,28,.18))",
-            } as React.CSSProperties}
+            className="tornreal hero-glyph absolute inset-0 [--r:3deg] drop-shadow-[9px_11px_0_rgba(20,22,28,.18)]"
           >
-            <div
-              className="halftone"
-              style={{
-                width: "100%",
-                height: "100%",
-                backgroundColor: "#f0492e",
-                backgroundBlendMode: "multiply",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
-              <span
-                style={{
-                  fontFamily: "var(--font-anton), sans-serif",
-                  fontSize: 150,
-                  lineHeight: 1,
-                  letterSpacing: "-.02em",
-                  color: "rgba(255,255,255,.92)",
-                  textShadow: "0 2px 6px rgba(0,0,0,.25)",
-                }}
-              >
+            <div className="halftone w-full h-full bg-coral bg-blend-multiply flex items-center justify-center">
+              <span className="font-heading text-[150px] leading-none tracking-[-.02em] text-[rgba(255,255,255,.92)] [text-shadow:0_2px_6px_rgba(0,0,0,.25)]">
                 SO
               </span>
             </div>
           </div>
-          <div
-            style={{
-              position: "absolute",
-              left: -30,
-              bottom: 44,
-              width: 110,
-              height: 110,
-              borderRadius: "50%",
-              background: "#3f5fe6",
-              mixBlendMode: "multiply",
-              opacity: 0.9,
-              zIndex: -1,
-            }}
-          />
+          <div className="absolute -left-[30px] bottom-[44px] w-[110px] h-[110px] rounded-full bg-blue mix-blend-multiply opacity-90 -z-10" />
         </div>
       </div>
       {/* numbered intro strip */}
-      <div
-        className="intro-strip"
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(3,1fr)",
-          gap: 24,
-          marginTop: 52,
-          borderTop: "2px solid #14161c",
-          paddingTop: 22,
-        }}
-      >
+      <div className="intro-strip grid grid-cols-1 mg:grid-cols-3 gap-[24px] mt-[52px] border-t-[2px] border-ink pt-[22px]">
         <div>
-          <div style={{ font: "700 12px 'Space Mono', monospace", color: "#f0492e" }}>
-            01 / NOW
-          </div>
-          <div style={{ font: "600 15px/1.4 'Archivo', sans-serif", marginTop: 7 }}>
+          <div className="font-mono font-bold text-[12px] text-coral">01 / NOW</div>
+          <div className="font-sans font-semibold text-[15px] leading-[1.4] mt-[7px]">
             Co-Founder &amp; CPO at ESCA — an agri-IoT platform for farmers.
           </div>
         </div>
         <div>
-          <div style={{ font: "700 12px 'Space Mono', monospace", color: "#f0492e" }}>
-            02 / RESEARCH
-          </div>
-          <div style={{ font: "600 15px/1.4 'Archivo', sans-serif", marginTop: 7 }}>
+          <div className="font-mono font-bold text-[12px] text-coral">02 / RESEARCH</div>
+          <div className="font-sans font-semibold text-[15px] leading-[1.4] mt-[7px]">
             ML thesis predicting TB treatment outcomes across 6 models.
           </div>
         </div>
         <div>
-          <div style={{ font: "700 12px 'Space Mono', monospace", color: "#f0492e" }}>
-            03 / STACK
-          </div>
-          <div style={{ font: "600 15px/1.4 'Archivo', sans-serif", marginTop: 7 }}>
+          <div className="font-mono font-bold text-[12px] text-coral">03 / STACK</div>
+          <div className="font-sans font-semibold text-[15px] leading-[1.4] mt-[7px]">
             React&nbsp;Native · TypeScript · Python · Supabase · Next.js.
           </div>
         </div>

@@ -2,79 +2,38 @@ export const ContactSection = () => {
   return (
     <section
       id="contact"
-      style={{
-        position: "relative",
-        marginTop: 70,
-        background: "#3f5fe6",
-        color: "#f4efe0",
-        borderTop: "3px solid #14161c",
-        overflow: "hidden",
-      }}
+      className="relative mt-[70px] bg-blue text-[#f4efe0] border-t-[3px] border-ink overflow-hidden"
     >
-      <div className="crumple" style={{ position: "absolute", inset: 0, opacity: 0.7 }} />
-      <div
-        style={{
-          position: "relative",
-          zIndex: 1,
-          maxWidth: 1180,
-          margin: "0 auto",
-          padding: "80px 40px 90px",
-          textAlign: "center",
-        }}
-      >
-        <div style={{ font: "700 13px 'Space Mono', monospace", letterSpacing: ".2em", marginBottom: 16 }}>
+      <div className="crumple absolute inset-0 opacity-70" />
+      <div className="relative z-[1] max-w-[1180px] mx-auto px-[40px] pt-[80px] pb-[90px] text-center">
+        <div className="font-mono font-bold text-[13px] tracking-[.2em] mb-[16px]">
           ◦ LET&apos;S BUILD SOMETHING ◦
         </div>
-        <h2
-          style={{
-            margin: 0,
-            fontFamily: "var(--font-anton), sans-serif",
-            fontSize: "clamp(56px, 10vw, 150px)",
-            lineHeight: 0.86,
-            letterSpacing: ".01em",
-          }}
-        >
-          SAY HELLO<span style={{ color: "#f0492e" }}>.</span>
+        <h2 className="m-0 font-heading text-[clamp(56px,10vw,150px)] leading-[0.86] tracking-[.01em]">
+          SAY HELLO<span className="text-coral">.</span>
         </h2>
         <a
           href="mailto:sdaoctavo@gmail.com"
-          style={{
-            display: "inline-block",
-            marginTop: 30,
-            background: "#fffdf4",
-            color: "#14161c",
-            font: "700 16px 'Space Mono', monospace",
-            padding: "18px 32px",
-            boxShadow: "6px 6px 0 #14161c",
-          }}
+          className="inline-block mt-[30px] bg-[#fffdf4] text-ink font-mono font-bold text-[16px] px-[32px] py-[18px] shadow-[6px_6px_0_#14161c]"
         >
           sdaoctavo@gmail.com →
         </a>
-        <div
-          style={{
-            display: "flex",
-            gap: 14,
-            justifyContent: "center",
-            flexWrap: "wrap",
-            marginTop: 34,
-            font: "700 13px 'Space Mono', monospace",
-          }}
-        >
+        <div className="flex gap-[14px] justify-center flex-wrap mt-[34px] font-mono font-bold text-[13px]">
           <a
             href="https://linkedin.com/in/seanoctavo"
-            style={{ color: "#f4efe0", borderBottom: "2px solid #f0492e" }}
+            className="text-[#f4efe0] border-b-[2px] border-coral"
           >
             LINKEDIN
           </a>
-          <span style={{ opacity: 0.5 }}>/</span>
+          <span className="opacity-50">/</span>
           <a
             href="https://github.com/seanseand"
-            style={{ color: "#f4efe0", borderBottom: "2px solid #f0492e" }}
+            className="text-[#f4efe0] border-b-[2px] border-coral"
           >
             GITHUB
           </a>
-          <span style={{ opacity: 0.5 }}>/</span>
-          <span style={{ color: "#f4efe0" }}>+63 906 488 6484</span>
+          <span className="opacity-50">/</span>
+          <span className="text-[#f4efe0]">+63 906 488 6484</span>
         </div>
       </div>
     </section>

@@ -38,12 +38,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${anton.variable} ${archivo.variable} ${archivoBlack.variable} ${spaceMono.variable} antialiased`}
-      >
-        {children}
-      </body>
+    <html
+      lang="en"
+      className={`${anton.variable} ${archivo.variable} ${archivoBlack.variable} ${spaceMono.variable}`}
+    >
+      <body className="antialiased">{children}</body>
     </html>
   );
 }

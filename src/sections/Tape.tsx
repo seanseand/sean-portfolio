@@ -2,28 +2,10 @@ import { marqueeText } from "@/data/portfolio";
 
 export const TapeSection = () => {
   return (
-    <div
-      style={{
-        overflow: "hidden",
-        background: "#14161c",
-        color: "#efe9d8",
-        borderTop: "2px solid #14161c",
-        borderBottom: "2px solid #14161c",
-        padding: "12px 0",
-        marginTop: 44,
-      }}
-    >
-      <div
-        style={{
-          display: "flex",
-          width: "max-content",
-          animation: "mq 26s linear infinite",
-          font: "700 20px 'Anton', sans-serif",
-          letterSpacing: ".06em",
-        }}
-      >
-        <span style={{ display: "flex", gap: 26, paddingRight: 26 }}>{marqueeText}</span>
-        <span style={{ display: "flex", gap: 26, paddingRight: 26 }}>{marqueeText}</span>
+    <div className="overflow-hidden bg-ink text-[#efe9d8] border-y-[2px] border-ink py-[12px] mt-[44px]">
+      <div className="flex w-max [animation:mq_26s_linear_infinite] font-heading font-bold text-[20px] tracking-[.06em]">
+        <span className="flex gap-[26px] pr-[26px]">{marqueeText}</span>
+        <span className="flex gap-[26px] pr-[26px]">{marqueeText}</span>
       </div>
     </div>
   );
