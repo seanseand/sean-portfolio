@@ -1,4 +1,7 @@
 import { Reveal } from "@/components/Reveal";
+import { technologies } from "@/data/portfolio";
+
+const techRotations = ["-1deg", ".8deg", "-.6deg", "1.1deg", "-.9deg", ".6deg", "-.4deg"];
 
 export const AboutSection = () => {
   return (
@@ -76,6 +79,41 @@ export const AboutSection = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="font-mono font-bold text-[clamp(11px,1.1vw,12px)] tracking-[.12em] text-coral mt-[28px] mg:mt-[34px] mb-[16px] mg:mb-[18px]">
+        ◦ TECHNOLOGIES &amp; TOOLS
+      </div>
+      <div className="tech-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[16px] lg:gap-[20px]">
+        {technologies.map((cat, i) => (
+          <div
+            key={cat.label}
+            className="paper p-[18px] mg:p-[20px] shadow-card"
+            style={{ transform: `rotate(${techRotations[i % techRotations.length]})` }}
+          >
+            <div
+              className="font-mono font-bold text-[clamp(11px,1.1vw,12px)] tracking-[.12em] mb-[12px]"
+              style={{ color: cat.color }}
+            >
+              ◦ {cat.label}
+            </div>
+            {cat.items ? (
+              <div className="flex gap-[8px] flex-wrap">
+                {cat.items.map((item) => (
+                  <span
+                    key={item}
+                    className="bg-paper border-[1.5px] border-ink font-mono font-bold text-[clamp(10px,1vw,11px)] px-[11px] py-[6px]"
+                  >
+                    {item}
+                  </span>
+                ))}
+              </div>
+            ) : (
+              <p className="m-0 font-sans font-medium text-[clamp(13px,1.3vw,14px)] leading-[1.55]">
+                {cat.prose}
+              </p>
+            )}
+          </div>
+        ))}
       </div>
       {/* certs row */}
       <div className="certs-row flex gap-[16px] flex-wrap mt-[22px]">
