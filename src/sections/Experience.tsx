@@ -18,7 +18,7 @@ export const ExperienceSection = () => {
         {timeline.map((e) => (
           <div key={e.org} className="relative">
             <span
-              className="absolute -left-[35px] mg:-left-[45px] top-[4px] w-[16px] h-[16px] border-[3px] border-ink rounded-full bg-[var(--dot)]"
+              className="absolute -left-[33.5px] mg:-left-[43.5px] top-[4px] w-[16px] h-[16px] border-[3px] border-ink rounded-full bg-[var(--dot)]"
               style={{ '--dot': e.color } as React.CSSProperties}
             />
             <div
