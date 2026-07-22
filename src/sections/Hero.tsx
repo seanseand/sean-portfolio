@@ -2,7 +2,7 @@ export const HeroSection = () => {
   return (
     <header
       id="top"
-      className="relative max-w-content mx-auto px-[20px] sm:px-[24px] mg:px-[32px] lg:px-section-x pt-[48px] mg:pt-[58px] lg:pt-[64px] pb-[32px] lg:pb-section-y"
+      className="relative max-w-content mx-auto px-[20px] sm:px-[24px] mg:px-[32px] lg:px-section-x pt-[48px] mg:pt-[58px] lg:pt-[64px] pb-[32px] lg:pb-section-y overflow-x-clip"
     >
       <div className="font-mono font-normal text-[clamp(11px,1.3vw,13px)] tracking-[.18em] mg:tracking-[.22em] text-coral mb-[16px]">
         ◦ COMPUTER SCIENCE GRADUATE · 2026 · BAGUIO CITY, PH
@@ -58,7 +58,7 @@ export const HeroSection = () => {
               </span>
             </div>
           </div>
-          <div className="absolute -left-[20px] mg:-left-[30px] bottom-[44px] w-[clamp(72px,24vw,110px)] h-[clamp(72px,24vw,110px)] rounded-full bg-blue mix-blend-multiply opacity-90 -z-10" />
+          <div className="absolute -left-[10%] bottom-[13%] w-[39%] aspect-square rounded-full bg-blue mix-blend-multiply opacity-90 -z-10" />
         </div>
       </div>
       {/* numbered intro strip */}
