@@ -10,7 +10,7 @@ export const ProjectsSection = () => {
       <div className="flex flex-wrap items-baseline gap-[10px] mg:gap-[16px] mb-[30px] mg:mb-[38px]">
         <span className="font-heading text-[clamp(38px,5.5vw,46px)] leading-none text-ink">WORK</span>
         <span className="font-mono font-bold text-[clamp(11px,1.15vw,12px)] tracking-[.14em] mg:tracking-[.16em] text-coral">
-          / THINGS I&apos;VE BUILT &amp; BROKEN
+          / THINGS I&apos;VE BUILT, BROKEN, &amp; FIXED
         </span>
       </div>
 

@@ -93,7 +93,7 @@ export const featured: FeaturedProject = {
   sub: "Ecosystem for Sustainable Commerce in Agriculture",
   role: "CO-FOUNDER & CHIEF PRODUCT OFFICER",
   blurb:
-    "A mobile platform for farmers to log crop lifecycles, monitor real-time greenhouse conditions (temperature, humidity, pH) via IoT, and give cooperative admins performance analytics. I lead front-end in a 6-person team, own features end-to-end from UI/UX to the data layer, and delivered the MVP across 3 user roles. Pilot rollout with partner org ALCAVEGA is next.",
+    "A mobile platform for farmers to log crop lifecycles, monitor real-time greenhouse conditions (temperature, humidity, pH) via IoT, and give cooperative admins performance analytics. I lead front-end in a 6-person team, own features end-to-end from UI/UX to the data layer, and shaped ESCA's brand identity — logo and visual system included. Delivered the MVP across 3 user roles; pilot rollout with partner org ALCAVEGA is next.",
   stack: ["React Native", "Expo", "TypeScript", "Supabase", "Expo Router"],
   badge: "/images/ESCA-logo-badge.png",
 };
