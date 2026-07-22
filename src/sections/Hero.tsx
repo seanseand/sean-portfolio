@@ -63,24 +63,13 @@ export const HeroSection = () => {
           <div className="absolute -left-[10%] bottom-[13%] w-[39%] aspect-square rounded-full bg-blue mix-blend-multiply opacity-90 -z-10" />
         </div>
       </div>
-      {/* numbered intro strip */}
-      <div className="intro-strip grid grid-cols-1 mg:grid-cols-3 gap-[18px] lg:gap-[24px] mt-[42px] mg:mt-[52px] border-t-[2px] border-ink pt-[22px]">
-        <div>
-          <div className="font-mono font-bold text-[clamp(11px,1.15vw,12px)] text-coral">01 / NOW</div>
+      {/* intro strip — single NOW item */}
+      <div className="intro-strip mt-[42px] mg:mt-[52px] border-t-[2px] border-ink pt-[22px]">
+        <div className="max-w-[560px]">
+          <div className="font-mono font-normal text-[clamp(11px,1.15vw,12px)] tracking-[.18em] mg:tracking-[.22em] text-coral">◦ NOW</div>
           <div className="font-sans font-semibold text-[clamp(14px,1.35vw,15px)] leading-[1.4] mt-[7px]">
-            Co-Founder &amp; CPO at ESCA — an agri-IoT platform for farmers.
-          </div>
-        </div>
-        <div>
-          <div className="font-mono font-bold text-[clamp(11px,1.15vw,12px)] text-coral">02 / RESEARCH</div>
-          <div className="font-sans font-semibold text-[clamp(14px,1.35vw,15px)] leading-[1.4] mt-[7px]">
-            ML thesis predicting TB treatment outcomes across 6 models.
-          </div>
-        </div>
-        <div>
-          <div className="font-mono font-bold text-[clamp(11px,1.15vw,12px)] text-coral">03 / STACK</div>
-          <div className="font-sans font-semibold text-[clamp(14px,1.35vw,15px)] leading-[1.4] mt-[7px]">
-            React&nbsp;Native · TypeScript · Python · Supabase · Next.js.
+            Co-founder at ESCA (Ecosystem for Sustainable Commerce in Agriculture) — a
+            mobile/web platform for farmer cooperatives.
           </div>
         </div>
       </div>
