@@ -1,4 +1,3 @@
-import { AsciiPanel } from "@/components/AsciiPanel";
 import { Reveal } from "@/components/Reveal";
 import { featured, moreProjects } from "@/data/portfolio";
 
@@ -23,34 +22,39 @@ export const ProjectsSection = () => {
         <div className="absolute -top-[15px] left-[20px] mg:left-[26px] z-[5] bg-ink text-paper font-mono font-bold text-[clamp(10px,1vw,11px)] tracking-[.14em] px-[12px] mg:px-[13px] py-[7px] rotate-[-1.6deg] shadow-[3px_3px_0_#f0492e]">
           ★ HIGHLIGHT PROJECT
         </div>
-        <div className="featured-grid grid grid-cols-1 mg:grid-cols-[.9fr_1.1fr] lg:grid-cols-[1fr_1.12fr] gap-0">
-          <AsciiPanel n={featured.n} color={featured.color} title={featured.title} />
-          <div className="px-[24px] mg:px-[32px] lg:px-[40px] py-[30px] mg:py-[34px] lg:py-[38px] relative z-[1]">
-            <div className="font-mono font-bold text-[clamp(10px,1vw,11px)] tracking-[.14em] text-coral">
-              {featured.tag}
-            </div>
-            <h3 className="mt-[8px] mb-[2px] font-display text-[clamp(38px,5.4vw,52px)] leading-[0.94] tracking-[-.02em]">
+        <div className="px-[24px] mg:px-[32px] lg:px-[40px] py-[30px] mg:py-[34px] lg:py-[38px] relative z-[1]">
+          <div className="font-mono font-bold text-[clamp(10px,1vw,11px)] tracking-[.14em] text-coral">
+            {featured.tag}
+          </div>
+          <div className="flex items-center gap-[14px] mg:gap-[18px] mt-[8px] mb-[2px]">
+            <h3 className="font-display text-[clamp(38px,5.4vw,52px)] leading-[0.94] tracking-[-.02em]">
               {featured.title}
             </h3>
-            <div className="font-sans font-semibold text-[clamp(14px,1.45vw,16px)] text-body">
-              {featured.sub}
-            </div>
-            <div className="inline-block font-mono font-bold text-[clamp(10px,1vw,11px)] bg-ink text-paper px-[10px] py-[5px] mt-[16px] mb-[4px]">
-              {featured.role}
-            </div>
-            <p className="mt-[12px] mb-0 font-sans font-medium text-[clamp(14px,1.35vw,15px)] leading-[1.6] text-body">
-              {featured.blurb}
-            </p>
-            <div className="flex gap-[8px] flex-wrap mt-[20px]">
-              {featured.stack.map((t) => (
-                <span
-                  key={t}
-                  className="font-mono font-bold text-[clamp(10px,1vw,11px)] border-[1.5px] border-ink px-[10px] py-[5px] bg-card"
-                >
-                  {t}
-                </span>
-              ))}
-            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={featured.badge}
+              alt="ESCA logo"
+              className="h-[clamp(40px,6vw,60px)] w-auto object-contain"
+            />
+          </div>
+          <div className="font-sans font-semibold text-[clamp(14px,1.45vw,16px)] text-body">
+            {featured.sub}
+          </div>
+          <div className="inline-block font-mono font-bold text-[clamp(10px,1vw,11px)] bg-ink text-paper px-[10px] py-[5px] mt-[16px] mb-[4px]">
+            {featured.role}
+          </div>
+          <p className="mt-[12px] mb-0 font-sans font-medium text-[clamp(14px,1.35vw,15px)] leading-[1.6] text-body">
+            {featured.blurb}
+          </p>
+          <div className="flex gap-[8px] flex-wrap mt-[20px]">
+            {featured.stack.map((t) => (
+              <span
+                key={t}
+                className="font-mono font-bold text-[clamp(10px,1vw,11px)] border-[1.5px] border-ink px-[10px] py-[5px] bg-card"
+              >
+                {t}
+              </span>
+            ))}
           </div>
         </div>
       </Reveal>
