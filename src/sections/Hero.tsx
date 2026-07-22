@@ -1,6 +1,6 @@
 export const HeroSection = () => {
   return (
-    <header id="top" className="relative max-w-[1180px] mx-auto px-[40px] pt-[64px] pb-[40px]">
+    <header id="top" className="relative max-w-[1180px] mx-auto px-[20px] sm:px-[40px] pt-[48px] sm:pt-[64px] pb-[40px] overflow-x-clip">
       <div className="font-mono font-normal text-[13px] tracking-[.22em] text-coral mb-[16px]">
         ◦ COMPUTER SCIENCE GRADUATE · 2026 · BAGUIO CITY, PH
       </div>
@@ -43,19 +43,19 @@ export const HeroSection = () => {
         </div>
         {/* decorative halftone glyph (replaces portrait cut-out) */}
         <div
-          className="hero-portrait relative justify-self-start mt-[32px] mg:justify-self-end mg:mt-0 w-[280px] h-[340px]"
+          className="hero-portrait relative justify-self-start mt-[32px] mg:justify-self-end mg:mt-0 w-full max-w-[280px] aspect-[280/340]"
           aria-hidden="true"
         >
           <div
             className="tornreal hero-glyph absolute inset-0 [--r:3deg] drop-shadow-[9px_11px_0_rgba(20,22,28,.18)]"
           >
             <div className="halftone w-full h-full bg-coral bg-blend-multiply flex items-center justify-center">
-              <span className="font-heading text-[150px] leading-none tracking-[-.02em] text-[rgba(255,255,255,.92)] [text-shadow:0_2px_6px_rgba(0,0,0,.25)]">
+              <span className="font-heading text-[clamp(90px,40vw,150px)] leading-none tracking-[-.02em] text-[rgba(255,255,255,.92)] [text-shadow:0_2px_6px_rgba(0,0,0,.25)]">
                 SO
               </span>
             </div>
           </div>
-          <div className="absolute -left-[30px] bottom-[44px] w-[110px] h-[110px] rounded-full bg-blue mix-blend-multiply opacity-90 -z-10" />
+          <div className="absolute -left-[10%] bottom-[13%] w-[39%] aspect-square rounded-full bg-blue mix-blend-multiply opacity-90 -z-10" />
         </div>
       </div>
       {/* numbered intro strip */}
