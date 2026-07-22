@@ -61,7 +61,7 @@ export const ProjectsSection = () => {
           MORE WORK
         </span>
         <span className="flex-1 h-[2px] bg-ink" />
-        <span className="font-mono font-bold text-[clamp(10px,1vw,11px)] text-coral">03 SELECTED</span>
+        <span className="font-mono font-bold text-[clamp(10px,1vw,11px)] text-coral">{String(moreProjects.length).padStart(2, '0')} SELECTED</span>
       </Reveal>
       <Reveal className="work-grid grid grid-cols-1 mg:grid-cols-3 gap-[20px] lg:gap-[24px]">
         {moreProjects.map((p) => (

@@ -83,6 +83,54 @@ export const moreProjects: MoreProject[] = [
       "Ran BRTS / BRSS across 20+ modules on 3 enterprise platforms; documented defects and inconsistencies to raise QA coverage on concurrent projects.",
     stack: ["BRTS / BRSS", "Manual QA"],
   },
+  {
+    n: "05",
+    color: "#8b5cf6",
+    tag: "WEB APP · ACADEMIC",
+    title: "KaizenTek Exit System",
+    sub: "Exit-interview flows for students & admins",
+    role: "UI/UX & FRONTEND",
+    signal: "STUDENT + ADMIN VIEWS · DYNAMIC FORMS",
+    blurb:
+      "Designed student and admin interfaces with dynamic form handling and validation; built core features including the student home screen, questionnaire view, and admin panel.",
+    stack: ["HTML", "JavaScript", "Node.js", "PHP", "MySQL"],
+  },
+  {
+    n: "06",
+    color: "#0ea5e9",
+    tag: "WEB APP · ACADEMIC",
+    title: "OSA System",
+    sub: "Student-affairs slip tracking",
+    role: "FULL-STACK",
+    signal: "AUTH-GATED · SECURE ABSENCE LOGS",
+    blurb:
+      "A Flask web app for managing Office of Student Affairs slips, letting students securely track absence records, with authentication-based access control.",
+    stack: ["Python", "Flask", "JavaScript"],
+  },
+  {
+    n: "07",
+    color: "#ec4899",
+    tag: "GAME · ACADEMIC",
+    title: "Boggled",
+    sub: "Multiplayer word-puzzle game",
+    role: "UI/UX & FRONTEND",
+    signal: "FIGMA → JAVA UI · MULTIPLAYER SYNC",
+    blurb:
+      "Led UI/UX design for a Java-based multiplayer word-puzzle game — menu and in-game views prototyped in Figma — and integrated the front-end with the database and multiplayer sync system.",
+    stack: ["Java", "MySQL", "Figma"],
+  },
+  {
+    n: "08",
+    color: "#14b8a6",
+    tag: "MOBILE · ACADEMIC",
+    title: "SubSki",
+    sub: "Android app UI",
+    role: "FRONTEND · ANDROID",
+    signal: "MOCKUPS → NATIVE ANDROID UI",
+    blurb:
+      "Led front-end development, translating design mockups into functional Android UI components, with UI testing and debugging of layout and performance issues.",
+    stack: ["Kotlin"],
+  },
 ];
 
 export const timeline: TimelineEntry[] = [
