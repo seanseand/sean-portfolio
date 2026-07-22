@@ -55,7 +55,7 @@ export const HeroSection = () => {
             className="tornreal hero-glyph absolute inset-0 [--r:3deg] drop-shadow-[9px_11px_0_rgba(20,22,28,.18)]"
           >
             <div className="halftone w-full h-full bg-coral bg-blend-multiply flex items-center justify-center">
-              <span className="font-heading text-[clamp(88px,40vw,150px)] leading-none tracking-[-.02em] text-[rgba(255,255,255,.92)] [text-shadow:0_2px_6px_rgba(0,0,0,.25)]">
+              <span className="font-heading text-[clamp(104px,48vw,188px)] leading-none tracking-[-.02em] text-[rgba(255,255,255,.92)] [text-shadow:0_2px_6px_rgba(0,0,0,.25)]">
                 SO
               </span>
             </div>
