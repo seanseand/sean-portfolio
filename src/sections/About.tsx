@@ -15,14 +15,25 @@ export const AboutSection = () => {
       </div>
       <div className="about-grid grid grid-cols-1 mg:grid-cols-[1.12fr_.88fr] lg:grid-cols-[1.3fr_1fr] gap-[24px] lg:gap-[30px] items-start">
         <div className="paper crumple px-[24px] mg:px-[30px] lg:px-[34px] pt-[26px] mg:pt-[30px] lg:pt-[34px] pb-[24px] lg:pb-[30px] shadow-card-lg rotate-[-.5deg]">
-          <p className="m-0 font-sans font-medium text-[clamp(15px,1.55vw,17px)] leading-[1.6] relative z-[1]">
-            I&apos;m <b>Sean Drei A. Octavo</b>, a Computer Science graduate from
-            Baguio City. I work across the whole build — from UI/UX direction down to
-            the data layer — and I&apos;m happiest turning a rough idea into
-            something real people use. Lately that means leading front-end at a
-            farm-tech startup, training ML models for public-health research, and
-            remastering a university&apos;s site onto a modern CMS.
-          </p>
+          <div className="space-y-[14px] mg:space-y-[16px]">
+            <p className="m-0 font-sans font-medium text-[clamp(15px,1.55vw,17px)] leading-[1.6] relative z-[1]">
+              I&apos;m <b>Sean Drei A. Octavo</b>, a Software Engineer and AI-driven
+              product builder based in Baguio City, Philippines — open to remote work
+              and relocation. I specialize in building full-stack and mobile
+              applications, agentic AI-assisted development workflows, and turning
+              rough ideas into products people actually use.
+            </p>
+            <p className="m-0 font-sans font-medium text-[clamp(15px,1.55vw,17px)] leading-[1.6] relative z-[1]">
+              I&apos;ve co-founded a startup as its Chief Product Officer, led
+              front-end for a cross-functional engineering team, and trained
+              machine-learning models for public-health research — all while
+              completing my CS degree at Saint Louis University.
+            </p>
+            <p className="m-0 font-sans font-medium text-[clamp(15px,1.55vw,17px)] leading-[1.6] relative z-[1]">
+              A Dean&apos;s Lister who cares less about the stack and more about
+              whether the thing actually ships and works for the people who use it.
+            </p>
+          </div>
           <div className="flex gap-[10px] flex-wrap mt-[24px] relative z-[1]">
             {["CREATIVITY", "STRATEGIC PLANNING", "ADAPTABILITY", "GROWTH MINDSET"].map(
               (tag) => (
