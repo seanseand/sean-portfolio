@@ -21,19 +21,19 @@ export const ContactSection = () => {
         <div className="flex gap-[12px] mg:gap-[14px] justify-center flex-wrap mt-[30px] mg:mt-[34px] font-mono font-bold text-[clamp(12px,1.2vw,13px)]">
           <a
             href="https://linkedin.com/in/seanoctavo"
-            className="text-paper-ink border-b-[2px] border-coral"
+            className="text-card border-b-[2px] border-coral"
           >
             LINKEDIN
           </a>
-          <span className="opacity-50">/</span>
+          <span className="text-card/60">/</span>
           <a
             href="https://github.com/seanseand"
-            className="text-paper-ink border-b-[2px] border-coral"
+            className="text-card border-b-[2px] border-coral"
           >
             GITHUB
           </a>
-          <span className="opacity-50">/</span>
-          <span className="text-paper-ink">+63 906 488 6484</span>
+          <span className="text-card/60">/</span>
+          <span className="text-card">+63 906 488 6484</span>
         </div>
       </div>
     </section>
