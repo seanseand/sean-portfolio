@@ -123,7 +123,7 @@ export function AsciiBackground() {
   return (
     <canvas
       ref={canvasRef}
-      className="fixed inset-0 w-screen h-screen z-0 pointer-events-none opacity-90"
+      className="fixed inset-0 w-full h-full z-0 pointer-events-none opacity-90"
     />
   );
 }
