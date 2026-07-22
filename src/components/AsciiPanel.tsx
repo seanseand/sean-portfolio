@@ -186,8 +186,8 @@ export function AsciiPanel({ n, color, title }: AsciiPanelProps) {
     <div className="relative min-h-[300px] mg:min-h-[340px] lg:min-h-[360px]">
       <div
         ref={panelRef}
-        className="halftone tornreal relative w-full h-full min-h-[300px] mg:min-h-[340px] lg:min-h-[360px] bg-blend-multiply flex items-center justify-center cursor-crosshair"
-        style={{ backgroundColor: color }}
+        className="halftone tornreal relative w-full h-full min-h-[300px] mg:min-h-[340px] lg:min-h-[360px] bg-[var(--panel-bg)] bg-blend-multiply flex items-center justify-center cursor-crosshair"
+        style={{ "--panel-bg": color } as React.CSSProperties}
       >
         <div className="font-heading text-[clamp(82px,10vw,104px)] text-[rgba(255,255,255,.9)] leading-none [text-shadow:0_2px_6px_rgba(0,0,0,.25)]">
           {n}
@@ -202,8 +202,7 @@ export function AsciiPanel({ n, color, title }: AsciiPanelProps) {
           className="ascii-cv absolute inset-0 w-full h-full opacity-0 transition-opacity duration-300 ease-in-out pointer-events-none"
         />
         <div
-          className="absolute top-[10px] right-[12px] font-mono font-bold text-[clamp(8px,.85vw,9px)] text-[rgba(255,255,255,.85)] transition-opacity duration-[250ms] pointer-events-none z-[2]"
-          style={{ opacity: dropHint ? 1 : 0 }}
+          className={`absolute top-[10px] right-[12px] font-mono font-bold text-[clamp(8px,.85vw,9px)] text-[rgba(255,255,255,.85)] transition-opacity duration-[250ms] pointer-events-none z-[2] ${dropHint ? "opacity-100" : "opacity-0"}`}
         >
           {dropHint ?? "DROP PHOTO ↴"}
         </div>

@@ -29,6 +29,23 @@
   --font-heading: var(--font-anton);
   --font-sans: var(--font-archivo);
   --font-mono: var(--font-space-mono);
+
+  /* Additional semantic colors (used across many components as arbitrary values today) */
+  --color-muted: #555;
+  --color-body: #2b2d34;
+  --color-paper-ink: #f4efe0;
+
+  /* Layout */
+  --spacing-section-x: 40px;
+  --spacing-section-y: 40px;
+  --container-content: 1180px;
+
+  /* Shadows */
+  --shadow-card: 6px 7px 0 rgba(20,22,28,.12);
+  --shadow-card-lg: 8px 9px 0 rgba(20,22,28,.12);
+  --shadow-card-xl: 12px 14px 0 rgba(20,22,28,.16);
+  --shadow-btn: 4px 4px 0 var(--coral);
+  --shadow-btn-dark: 6px 6px 0 var(--ink);
 }
 
 * {

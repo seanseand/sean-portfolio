@@ -2,7 +2,7 @@ export const HeroSection = () => {
   return (
     <header
       id="top"
-      className="relative max-w-[1180px] mx-auto px-[20px] sm:px-[24px] mg:px-[32px] lg:px-[40px] pt-[48px] mg:pt-[58px] lg:pt-[64px] pb-[32px] lg:pb-[40px] overflow-x-clip"
+      className="relative max-w-content mx-auto px-[20px] sm:px-[24px] mg:px-[32px] lg:px-section-x pt-[48px] mg:pt-[58px] lg:pt-[64px] pb-[32px] lg:pb-section-y overflow-x-clip"
     >
       <div className="font-mono font-normal text-[clamp(11px,1.3vw,13px)] tracking-[.18em] mg:tracking-[.22em] text-coral mb-[16px]">
         ◦ COMPUTER SCIENCE GRADUATE · 2026 · BAGUIO CITY, PH
@@ -16,7 +16,7 @@ export const HeroSection = () => {
             <br />
             &amp; chase <span className="text-coral">good ideas.</span>
           </h1>
-          <p className="max-w-[520px] mt-[22px] mg:mt-[26px] mb-0 font-sans font-medium text-[clamp(15px,1.45vw,17px)] leading-[1.55] text-[#2b2d34]">
+          <p className="max-w-[520px] mt-[22px] mg:mt-[26px] mb-0 font-sans font-medium text-[clamp(15px,1.45vw,17px)] leading-[1.55] text-body">
             Full-stack &amp; product builder, ML thesis researcher, and co-founder of
             an agri-IoT startup. I like shipping fast, tidy interfaces, and the
             occasional small experiment.
@@ -24,7 +24,7 @@ export const HeroSection = () => {
           <div className="flex gap-[14px] mt-[28px] flex-wrap">
             <a
               href="#work"
-              className="inline-flex items-center gap-[8px] bg-ink text-[#fffdf4] font-mono font-bold text-[clamp(12px,1.2vw,13px)] tracking-[.08em] px-[18px] mg:px-[22px] py-[13px] mg:py-[14px] rounded-[2px] shadow-[4px_4px_0_#f0492e]"
+              className="inline-flex items-center gap-[8px] bg-ink text-card font-mono font-bold text-[clamp(12px,1.2vw,13px)] tracking-[.08em] px-[18px] mg:px-[22px] py-[13px] mg:py-[14px] rounded-[2px] shadow-btn"
             >
               SEE THE WORK →
             </a>
