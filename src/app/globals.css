@@ -38,7 +38,7 @@
   /* Layout */
   --spacing-section-x: 40px;
   --spacing-section-y: 40px;
-  --width-content: 1180px;
+  --container-content: 1180px;
 
   /* Shadows */
   --shadow-card: 6px 7px 0 rgba(20,22,28,.12);
