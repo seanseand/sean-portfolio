@@ -1,12 +1,11 @@
 export interface FeaturedProject {
-  n: string;
-  color: string;
   tag: string;
   title: string;
   sub: string;
   role: string;
   blurb: string;
   stack: string[];
+  badge: string;
 }
 
 export interface MoreProject {
@@ -35,8 +34,6 @@ export const marqueeText =
   "REACT NATIVE ✦ TYPESCRIPT ✦ PYTHON ✦ SUPABASE ✦ NEXT.JS ✦ TAILWIND ✦ MACHINE LEARNING ✦ PRODUCT ✦ UI/UX ✦ WAGTAIL ✦";
 
 export const featured: FeaturedProject = {
-  n: "01",
-  color: "#3f5fe6",
   tag: "PRODUCT · 2025 — NOW",
   title: "ESCA",
   sub: "Ecosystem for Sustainable Commerce in Agriculture",
@@ -44,6 +41,7 @@ export const featured: FeaturedProject = {
   blurb:
     "A mobile platform for farmers to log crop lifecycles, monitor real-time greenhouse conditions (temperature, humidity, pH) via IoT, and give cooperative admins performance analytics. I lead front-end in a 6-person team, own features end-to-end from UI/UX to the data layer, and delivered the MVP across 3 user roles. Pilot rollout with partner org ALCAVEGA is next.",
   stack: ["React Native", "Expo", "TypeScript", "Supabase", "Expo Router"],
+  badge: "/images/ESCA-logo-badge.png",
 };
 
 export const moreProjects: MoreProject[] = [
