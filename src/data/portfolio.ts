@@ -30,8 +30,62 @@ export interface TimelineEntry {
   blurb: string;
 }
 
+export interface TechCategory {
+  label: string;
+  color: string;
+  items?: string[];
+  prose?: string;
+}
+
 export const marqueeText =
   "PYTHON ✦ JAVASCRIPT ✦ TYPESCRIPT ✦ REACT ✦ REACT NATIVE ✦ JAVA ✦ MYSQL ✦ MONGODB ✦ SUPABASE ✦ AGENTIC DRIVEN DEVELOPMENT ✦ UI/UX ✦";
+
+export const technologies: TechCategory[] = [
+  {
+    label: "LANGUAGES",
+    color: "#f0492e",
+    items: ["Java", "Python", "JavaScript", "TypeScript", "HTML", "CSS", "PHP", "C"],
+  },
+  {
+    label: "FRAMEWORKS / LIBRARIES",
+    color: "#3f5fe6",
+    items: [
+      "React Native",
+      "Expo",
+      "React",
+      "Next.js",
+      "Node.js",
+      "Express.js",
+      "Tailwind CSS",
+      "Wagtail",
+      "JavaFX",
+      "scikit-learn",
+      "XGBoost",
+      "TensorFlow",
+      "Keras",
+    ],
+  },
+  {
+    label: "DATABASE",
+    color: "#2fa36b",
+    items: ["MySQL", "MongoDB", "Supabase"],
+  },
+  {
+    label: "DEV TOOLS",
+    color: "#d9922a",
+    items: ["Git", "Docker"],
+  },
+  {
+    label: "AI TOOLS",
+    color: "#f0492e",
+    items: ["Claude Code", "Opencode", "Antigravity", "ChatGPT", "Orca", "Codex"],
+  },
+  {
+    label: "UI/UX",
+    color: "#3f5fe6",
+    items: ["Figma", "Canva", "Adobe Photoshop", "Adobe Illustrator"],
+  },
+];
 
 export const featured: FeaturedProject = {
   tag: "PRODUCT · 2025 — NOW",
