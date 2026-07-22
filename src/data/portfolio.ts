@@ -32,7 +32,7 @@ export interface TimelineEntry {
 }
 
 export const marqueeText =
-  "REACT NATIVE ✦ TYPESCRIPT ✦ PYTHON ✦ SUPABASE ✦ NEXT.JS ✦ TAILWIND ✦ MACHINE LEARNING ✦ PRODUCT ✦ UI/UX ✦ WAGTAIL ✦";
+  "PYTHON ✦ JAVASCRIPT ✦ TYPESCRIPT ✦ REACT ✦ REACT NATIVE ✦ JAVA ✦ MYSQL ✦ MONGODB ✦ SUPABASE ✦ AGENTIC DRIVEN DEVELOPMENT ✦ UI/UX ✦";
 
 export const featured: FeaturedProject = {
   n: "01",
