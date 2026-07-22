@@ -10,15 +10,17 @@ export const HeroSection = () => {
       <div className="hero-grid grid grid-cols-1 mg:grid-cols-[1.35fr_.8fr] lg:grid-cols-[1.55fr_1fr] gap-[30px] lg:gap-[36px] items-end">
         <div>
           <h1 className="m-0 font-display text-[clamp(46px,9vw,116px)] leading-[0.9] tracking-[-.025em]">
-            i build software,
+            Sean
             <br />
-            ship products
-            <br />
-            &amp; chase <span className="text-coral">good ideas.</span>
+            Octavo<span className="text-coral">.</span>
           </h1>
+          <p className="max-w-[560px] mt-[18px] mg:mt-[22px] mb-0 font-display text-[clamp(19px,2.7vw,30px)] leading-[1.15] tracking-[-.01em]">
+            i build software, ship products &amp; chase{" "}
+            <span className="text-coral">good ideas.</span>
+          </p>
           <p className="max-w-[520px] mt-[22px] mg:mt-[26px] mb-0 font-sans font-medium text-[clamp(15px,1.45vw,17px)] leading-[1.55] text-body">
-            Full-stack &amp; product builder, ML thesis researcher, and co-founder of
-            an agri-IoT startup. I like shipping fast, tidy interfaces, and the
+            Full-stack &amp; product builder with a research background and
+            startup experience. I like shipping fast, tidy interfaces, and the
             occasional small experiment.
           </p>
           <div className="flex gap-[14px] mt-[28px] flex-wrap">
