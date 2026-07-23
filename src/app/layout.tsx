@@ -27,7 +27,7 @@ const spaceMono = Space_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sean Octavo — Software Builder",
+  title: "Sean Drei Octavo | Portfolio",
   description:
     "Full-stack & product builder, ML thesis researcher, and co-founder of an agri-IoT startup. Based in Baguio City, PH.",
 };
